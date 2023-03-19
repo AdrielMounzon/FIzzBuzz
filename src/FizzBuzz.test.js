@@ -1,4 +1,4 @@
-import fizzbuzz from "./FizzBuzz";
+import {fizzbuzz, cadenaFizzBuzz} from "./FizzBuzz";
 
 describe("FizzBuzz", () => {
   it("genera FizzBuzz para 1", () => {
@@ -27,5 +27,9 @@ describe("FizzBuzz", () => {
 
   it("genera FizzBuzz para múltiplos de 3 y 5", () => {
     expect(fizzbuzz(15)).toEqual("FizzBuzz");
+  });
+
+  it("genera FizzBuzz para un rango de numeros", () => {
+    expect(cadenaFizzBuzz(10)).toEqual("1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz");
   });
 });

@@ -1,4 +1,4 @@
-function fizzbuzz(num)
+export function fizzbuzz(num)
 {
     if(num%3==0 && num%5==0)
     {
@@ -15,4 +15,16 @@ function fizzbuzz(num)
     return num + "";
 }
 
-export default fizzbuzz;
+export function cadenaFizzBuzz(num)
+{
+    let cadena = "";
+    for(let i=1;i<=num;i++)
+    {
+        cadena = cadena + fizzbuzz(i);
+        if(i<num)
+        {
+            cadena=cadena+", ";
+        }
+    }
+    return cadena;
+}
