@@ -8,4 +8,8 @@ describe("FizzBuzz", () => {
   it("genera FizzBuzz para 2", () => {
     expect(fizzbuzz(2)).toEqual("2");
   });
+
+  it("genera FizzBuzz para 3", () => {
+    expect(fizzbuzz(3)).toEqual("Fizz");
+  });
 });
