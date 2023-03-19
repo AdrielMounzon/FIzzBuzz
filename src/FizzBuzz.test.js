@@ -20,4 +20,8 @@ describe("FizzBuzz", () => {
   it("genera FizzBuzz para múltiplos de 3", () => {
     expect(fizzbuzz(9)).toEqual("Fizz");
   });
+
+  it("genera FizzBuzz para múltiplos de 5", () => {
+    expect(fizzbuzz(20)).toEqual("Buzz");
+  });
 });
